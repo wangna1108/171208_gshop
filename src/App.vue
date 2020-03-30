@@ -6,8 +6,16 @@
 </template>
 
 <script>
+import {mapActions} from 'vuex'
 import Footer from './components/footer/footer.vue'
+
 export default {
+  async mounted() {
+    this.$store.dispatch('getAddress')
+  },
+  methods:{
+    ...mapActions(['getAddress'])
+  },
   components: {
     Footer
   }
