@@ -9,21 +9,37 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "better-scroll": "^1.15.2",
     "core-js": "^3.6.4",
+    "date-fns": "^2.11.1",
+    "lazyload": "^2.0.0-rc.2",
+    "mint-ui": "^2.2.13",
+    "mockjs": "^1.1.0",
+    "postcss-loader": "^3.0.0",
     "swiper": "^5.3.6",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6",
     "vuex": "^3.1.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
     "@vue/cli-plugin-babel": "~4.2.0",
     "@vue/cli-plugin-eslint": "~4.2.0",
     "@vue/cli-service": "~4.2.0",
     "babel-eslint": "^10.0.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-component": "^1.1.1",
+    "css-loader": "^3.4.2",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.1.2",
+    "style-loader": "^1.1.3",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
+    "vue-loader": "^15.9.1",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -38,7 +54,14 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "generator-star-spacing": "off",
+      "no-tabs": "off",
+      "no-unused-vars": "off",
+      "no-console": "off",
+      "no-irregular-whitespace": "off",
+      "no-debugger": "off"
+    }
   },
   "browserslist": [
     "> 1%",

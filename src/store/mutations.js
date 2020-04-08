@@ -30,22 +30,22 @@ export default {
         state.shops = shops
     },
 
-    [RECEIVE_USER_INFO] (state, {userInfo}) {
+    [RECEIVE_USER_INFO] (state, {userInfo}) {  //获取用户信息
         state.userInfo = userInfo
     },
-    [RESET_USER_INFO] (state) {
+    [RESET_USER_INFO] (state) {  //退出登录
         state.userInfo = {}
     },
 
-    [RECEIVE_INFO](state, {info}) {
+    [RECEIVE_INFO](state, {info}) {   //接收商家信息
         state.info = info
     },
 
-    [RECEIVE_RATINGS](state, {ratings}) {
+    [RECEIVE_RATINGS](state, {ratings}) {  //评论信息
         state.ratings = ratings
     },
 
-    [RECEIVE_GOODS](state, {goods}) {
+    [RECEIVE_GOODS](state, {goods}) {    //商家列表信息
         state.goods = goods
     },
 

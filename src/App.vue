@@ -10,11 +10,13 @@ import {mapActions} from 'vuex'
 import Footer from './components/footer/footer.vue'
 
 export default {
-  async mounted() {
-    this.$store.dispatch('getAddress')
+   mounted() {
+    // this.$store.dispatch('getAddress')
+    this.getAddress()
+    this.getUserInfo()
   },
   methods:{
-    ...mapActions(['getAddress'])
+    ...mapActions(['getAddress','getUserInfo'])
   },
   components: {
     Footer
